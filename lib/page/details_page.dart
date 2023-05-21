@@ -1,14 +1,21 @@
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
+import '../controllers/cart_controller.dart';
 import '../core/color.dart';
 import '../core/space.dart';
 import '../core/text_style.dart';
 import '../model/model.dart';
 
-
 class DetailsPage extends StatefulWidget {
+  final cartController = Get.put(CartController());
   final Model model;
-  const DetailsPage({Key? key, required this.model}) : super(key: key);
+  final int? index;
+
+  DetailsPage({
+    Key? key,
+    required this.model,
+    this.index,
+  }) : super(key: key);
 
   @override
   _DetailsPageState createState() => _DetailsPageState();
@@ -17,6 +24,7 @@ class DetailsPage extends StatefulWidget {
 class _DetailsPageState extends State<DetailsPage> {
   int selectIndex = 0;
   int qty = 1;
+
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -197,11 +205,13 @@ class _DetailsPageState extends State<DetailsPage> {
                         borderRadius: BorderRadius.circular(50.0),
                       ),
                       child: Center(
-                        child: Text(
-                          'Buy Now',
-                          style: itemCardHeading.copyWith(color: white),
-                        ),
-                      ),
+                          child: IconButton(
+                              onPressed: () {
+                                CartController().addProduct(Model.products);
+                              },
+                              icon: Icon(
+                                Icons.add_circle,
+                              ))),
                     )
                   ],
                 )

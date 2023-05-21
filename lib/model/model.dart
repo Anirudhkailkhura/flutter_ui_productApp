@@ -5,6 +5,8 @@ class Model {
   final String category;
   final List image;
 
+  static var products;
+
   Model({
     required this.name,
     required this.price,
