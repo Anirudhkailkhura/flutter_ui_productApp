@@ -21,12 +21,12 @@ class HomePage extends StatelessWidget {
           children: [
             CustomAppBar(),
             Text(
-              'Furniture in\nunique style',
+              'braclet',
               style: heading,
             ),
             SpaceVH(height: 10),
             Text(
-              'We have wide rang of Furniture',
+              'We have wide rang of bracelet',
               style: subHeading,
             ),
             SpaceVH(height: 20),

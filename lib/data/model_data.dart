@@ -1,27 +1,25 @@
-
-
 import '../model/model.dart';
 
 List<Model> models = [
   Model(
-    name: 'Stylish Lamp',
+    name: 'Garnet Stone',
     image: [
-      'assets/images/img1.jpg',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img3-fotor-bg-remover-20230517115516.png',
-      'assets/images/img4-fotor-bg-remover-20230517115511.png',
+      'assets/images/img12.png',
+      'assets/images/img12(1).jpg',
+      'assets/images/img.jpg',
+      'assets/images/81LapTRjmeL._UY500_.jpg',
     ],
     price: '\$20.00',
     description: 'We have amazing Quality Lamp Wide range',
     category: 'Lamp',
   ),
   Model(
-    name: 'Stylish Sofa',
+    name: 'Garnet Stone',
     image: [
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
+      'assets/images/img12.png',
+      'assets/images/img12(1).jpg',
+      'assets/images/img.jpg',
+      'assets/images/81LapTRjmeL._UY500_.jpg',
     ],
     price: '\$250.00',
     description:
@@ -29,24 +27,24 @@ List<Model> models = [
     category: 'Sofa',
   ),
   Model(
-    name: 'Wooden Chair',
+    name: 'Garnet Stone',
     image: [
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
+      'assets/images/img12.png',
+      'assets/images/img12(1).jpg',
+      'assets/images/img.jpg',
+      'assets/images/81LapTRjmeL._UY500_.jpg',
     ],
     price: '\$35.00',
     description: 'Amazing stylish in multiple Most selling item of this',
     category: 'Chair',
   ),
   Model(
-    name: 'Modern Table',
+    name: 'Garnet Stone',
     image: [
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/img2-fotor-bg-remover-20230517115521.png',
-      'assets/images/Item_4 (2).jpg',
+      'assets/images/img12.png',
+      'assets/images/img12(1).jpg',
+      'assets/images/img.jpg',
+      'assets/images/81LapTRjmeL._UY500_.jpg',
     ],
     price: '\$20.00',
     description: 'New style of tables for your Homes and office.',

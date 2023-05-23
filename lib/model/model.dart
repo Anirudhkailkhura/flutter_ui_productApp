@@ -5,7 +5,7 @@ class Model {
   final String category;
   final List image;
 
-  static var products;
+  // static var products;
 
   Model({
     required this.name,
@@ -14,6 +14,11 @@ class Model {
     required this.category,
     required this.image,
   });
+
+  @override
+  String toString() {
+    return "Name: $name, Price: $price, Desc: $description, Category: $category, Image: $image";
+  }
 }
 
 class TabBarMenuButton {

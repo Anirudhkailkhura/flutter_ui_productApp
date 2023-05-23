@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
 import '../controllers/cart_controller.dart';
 import '../core/color.dart';
@@ -9,13 +10,8 @@ import '../model/model.dart';
 class DetailsPage extends StatefulWidget {
   final cartController = Get.put(CartController());
   final Model model;
-  final int? index;
 
-  DetailsPage({
-    Key? key,
-    required this.model,
-    this.index,
-  }) : super(key: key);
+  DetailsPage({Key? key, required this.model}) : super(key: key);
 
   @override
   _DetailsPageState createState() => _DetailsPageState();
@@ -207,7 +203,7 @@ class _DetailsPageState extends State<DetailsPage> {
                       child: Center(
                           child: IconButton(
                               onPressed: () {
-                                CartController().addProduct(Model.products);
+                                CartController().addProduct(widget.model);
                               },
                               icon: Icon(
                                 Icons.add_circle,
