@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/controllers/cart_controller.dart';
+import 'package:get/get.dart';
 
 import '../widgets/widgets.dart';
 
 class CartScreen extends StatelessWidget {
-  const CartScreen({super.key});
+  CartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +14,8 @@ class CartScreen extends StatelessWidget {
       body: Column(
         children: [
           CartProducts(),
-          CartTotal()
+          // CartTotal()
         ],
-
       ),
     );
   }

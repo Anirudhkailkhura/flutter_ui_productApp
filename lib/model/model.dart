@@ -1,3 +1,4 @@
+
 class Model {
   final String name;
   final String price;

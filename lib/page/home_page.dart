@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../controllers/cart_controller.dart';
 import '../core/color.dart';
 import '../core/space.dart';
 import '../core/text_style.dart';
@@ -11,6 +13,8 @@ import '../widgets/tabbar_button.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final c = Get.put(CartController());
+
     return Scaffold(
       backgroundColor: white,
       body: Padding(

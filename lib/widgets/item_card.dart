@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../core/space.dart';
 import '../core/text_style.dart';
 import '../model/model.dart';
@@ -11,10 +12,7 @@ class ItemCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (builder) => DetailsPage(model: model)));
-      },
+      onTap: () => Get.to(() => DetailsPage(model: model)),
       child: Container(
         height: 140.0,
         margin: EdgeInsets.only(bottom: 30.0),

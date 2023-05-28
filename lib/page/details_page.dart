@@ -8,7 +8,7 @@ import '../core/text_style.dart';
 import '../model/model.dart';
 
 class DetailsPage extends StatefulWidget {
-  final cartController = Get.put(CartController());
+  final cartController = Get.find<CartController>();
   final Model model;
 
   DetailsPage({Key? key, required this.model}) : super(key: key);
@@ -29,9 +29,7 @@ class _DetailsPageState extends State<DetailsPage> {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          onPressed: () => Get.back(),
           icon: Icon(
             Icons.arrow_back_ios_new_outlined,
             color: black,

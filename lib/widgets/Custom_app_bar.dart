@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/page/cart_screen.dart';
+import 'package:get/get.dart';
 
 import '../core/color.dart';
+import 'cart_product.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({Key? key}) : super(key: key);
@@ -33,15 +35,11 @@ class CustomAppBar extends StatelessWidget {
                 ),
               ),
               //cart button
-              child: ElevatedButton(             
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => CartScreen()));                      
-                },
+              child: ElevatedButton(
+                onPressed: () => Get.to(() => CartScreen()),
                 child: Icon(
                   Icons.shopping_cart_outlined,
                   color: white,
-                
                 ),
               ),
             ),

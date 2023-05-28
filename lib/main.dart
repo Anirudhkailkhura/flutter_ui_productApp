@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'page/pages.dart';
+import 'page/home_page.dart';
+
 
 void main() {
   runApp(MyApp());
